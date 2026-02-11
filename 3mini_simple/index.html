@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Store Layout Mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container header-inner">
+            <h1 class="logo">Store Name</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#access">Access</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーローエリア -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <h2 class="hero-title">Store Name</h2>
+                <p class="hero-catch">ここにキャッチコピーが入ります。<br>シンプルで心地よい暮らしを。</p>
+                <div class="hero-image-placeholder">
+                    <span>Main Image</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 紹介文エリア -->
+        <section id="about" class="section about">
+            <div class="container narrow-container">
+                <p class="about-text">
+                    ここにお店の紹介文が入ります。私たちのお店は、お客様にリラックスしていただける空間を提供しています。<br>
+                    日常の喧騒を忘れ、ゆったりとした時間をお過ごしください。<br>
+                    こだわりのメニューとサービスで、皆様をお待ちしております。
+                </p>
+            </div>
+        </section>
+
+        <!-- サービス紹介エリア -->
+        <section id="service" class="section service">
+            <div class="container">
+                <div class="service-grid">
+                    <!-- サービス1 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h3 class="service-title">Service 01</h3>
+                        <p class="service-desc">サービスの内容についての説明文がここに入ります。特徴やメリットを簡潔に伝えます。</p>
+                    </div>
+                    <!-- サービス2 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h3 class="service-title">Service 02</h3>
+                        <p class="service-desc">サービスの内容についての説明文がここに入ります。特徴やメリットを簡潔に伝えます。</p>
+                    </div>
+                    <!-- サービス3 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h3 class="service-title">Service 03</h3>
+                        <p class="service-desc">サービスの内容についての説明文がここに入ります。特徴やメリットを簡潔に伝えます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 営業情報ブロック -->
+        <section id="contact" class="section info">
+            <div class="container narrow-container">
+                <div class="info-grid">
+                    <div class="info-item">
+                        <h3 class="info-title">Opening Hours</h3>
+                        <p class="info-content">
+                            月〜金: 10:00 - 19:00<br>
+                            土日祝: 11:00 - 18:00<br>
+                            <span class="note">日・祝は定休日です</span>
+                        </p>
+                        <div class="info-sns">
+                            <a href="https://instagram.com" class="sns-icon" aria-label="Instagram"
+                                data-preview-link="snsInstagram" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com" class="sns-icon" aria-label="X (Twitter)" data-preview-link="snsX"
+                                target="_blank">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="https://facebook.com" class="sns-icon" aria-label="Facebook"
+                                data-preview-link="snsFacebook" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <h3 class="info-title">Contact</h3>
+                        <p class="info-content">
+                            Tel: 03-1234-5678<br>
+                            Line ID: @example
+                            <br><br>
+                            <a href="#" class="button">お問合せ</a>
+                            <a href="#" class="button btn-reserve"
+                                style="display:none; background-color:#E76F51; margin-left:10px;">ご予約</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセス -->
+        <section id="access" class="section access">
+            <div class="container narrow-container">
+                <address class="access-address">
+                    〒123-4567<br>
+                    東京都渋谷区〇〇町1-2-3 ビル名1F
+                </address>
+                <div class="map-placeholder">
+                    <span>Google Maps Placeholder</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-logo">Store Name</p>
+            <p class="footer-copy">&copy; 2024 Store Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

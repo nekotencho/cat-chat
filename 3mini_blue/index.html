@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trustworthy Blue Site Layout Mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container header-inner">
+            <h1 class="logo">Office Name</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#access">Access</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーローエリア -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h2 class="hero-title">Office Name</h2>
+                    <p class="hero-catch">信頼と実績で、<br>あなたの未来をサポートします。</p>
+                </div>
+                <div class="hero-image-placeholder">
+                    <span>Main Image Area</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- 紹介文エリア -->
+        <section id="about" class="section about">
+            <div class="container narrow-container">
+                <h3 class="section-title">About Us</h3>
+                <p class="about-text">
+                    私たちは、お客様一人ひとりの課題に真摯に向き合い、最適な解決策をご提案いたします。<br>
+                    長年の経験と専門知識を活かし、安心してお任せいただけるサービスを提供することをお約束します。<br>
+                    どのような些細なことでも、お気軽にご相談ください。
+                </p>
+            </div>
+        </section>
+
+        <!-- サービス紹介エリア -->
+        <section id="service" class="section service">
+            <div class="container">
+                <h3 class="section-title">Our Services</h3>
+                <div class="service-grid">
+                    <!-- サービス1 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h4 class="service-card-title">Consulting</h4>
+                        <p class="service-desc">専門的な視点から現状を分析し、最適なプランをご提案します。課題解決に向けた具体的なサポートを行います。</p>
+                    </div>
+                    <!-- サービス2 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h4 class="service-card-title">Management</h4>
+                        <p class="service-desc">日々の業務負担を軽減し、本来の業務に集中できる環境を整えます。効率的で確実な管理サポートを提供します。</p>
+                    </div>
+                    <!-- サービス3 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h4 class="service-card-title">Support</h4>
+                        <p class="service-desc">アフターフォローも万全です。継続的なサポートにより、お客様の長期的な成功をバックアップいたします。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 営業情報ブロック -->
+        <section id="contact" class="section info">
+            <div class="container narrow-container">
+                <div class="info-box">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4 class="info-label">Opening Hours</h4>
+                            <p class="info-value">
+                                平日: 9:00 - 18:00<br>
+                                土曜: 10:00 - 15:00<br>
+                                <span class="note">日・祝・年末年始は休業</span>
+                            </p>
+                            <div class="info-sns">
+                                <a href="https://instagram.com" class="sns-icon" aria-label="Instagram"
+                                    data-preview-link="snsInstagram" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://x.com" class="sns-icon" aria-label="X (Twitter)"
+                                    data-preview-link="snsX" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="https://facebook.com" class="sns-icon" aria-label="Facebook"
+                                    data-preview-link="snsFacebook" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <h4 class="info-label">Contact</h4>
+                            <p class="info-value contact-highlight">
+                                Tel: 03-1234-5678
+                            </p>
+                            <p class="info-sub">
+                                LINE ID: @office_name
+                            </p>
+                            <a href="#" class="btn-primary">お問合せ</a>
+                            <a href="#" class="btn-primary btn-reserve"
+                                style="display:none; background-color:#E76F51; margin-left:10px;">ご予約</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセス -->
+        <section id="access" class="section access">
+            <div class="container">
+                <h3 class="section-title">Access</h3>
+                <div class="access-content">
+                    <address class="access-address">
+                        〒100-0001<br>
+                        東京都千代田区〇〇町 1-2-3 オフィスビル 5F
+                    </address>
+                    <div class="map-placeholder">
+                        <span>Google Maps Placeholder</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-info">
+                <p class="footer-logo">Office Name</p>
+
+            </div>
+            <p class="footer-copy">&copy; 2024 Office Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

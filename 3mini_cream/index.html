@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cream & Warm Layout Mockup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=M+PLUS+Rounded+1c:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="container header-inner">
+            <h1 class="logo">Store Name</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#access">Access</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- ヒーローエリア -->
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <h2 class="hero-title">Store Name</h2>
+                    <p class="hero-catch">日々の暮らしに、<br>ほんの少しのやさしさを。</p>
+                </div>
+                <div class="hero-image-placeholder">
+                    <span>Main Image</span>
+                </div>
+            </div>
+            <!-- 波型の装飾 (下部) 削除 -->
+        </section>
+
+        <!-- 紹介文エリア -->
+        <section id="about" class="section about">
+            <div class="container narrow-container">
+                <h3 class="section-title">About</h3>
+                <p class="about-text">
+                    はじめまして。<br>
+                    ここは、時間を忘れてゆっくりと過ごせる場所です。<br>
+                    <br>
+                    お客様ひとりひとりに寄り添い、<br>
+                    心温まるひとときをお届けしたいと思っています。<br>
+                    どうぞ、肩の力を抜いておくつろぎください。
+                </p>
+            </div>
+        </section>
+
+        <!-- サービス紹介エリア -->
+        <section id="service" class="section service">
+            <div class="container">
+                <h3 class="section-title">Service</h3>
+                <div class="service-grid">
+                    <!-- サービス1 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h4 class="service-card-title">Menu 01</h4>
+                        <p class="service-desc">こだわり素材を使った、体にやさしいメニューです。季節ごとの味わいをお楽しみください。</p>
+                    </div>
+                    <!-- サービス2 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h4 class="service-card-title">Menu 02</h4>
+                        <p class="service-desc">初めての方でも安心してご参加いただける教室です。少人数制で丁寧にお教えします。</p>
+                    </div>
+                    <!-- サービス3 -->
+                    <div class="service-card">
+                        <div class="service-image-placeholder"></div>
+                        <h4 class="service-card-title">Menu 03</h4>
+                        <p class="service-desc">あなただけの特別な時間。ご希望に合わせて、オーダーメイドのプランをご提案します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 営業情報ブロック (背景変えて強調) -->
+        <div class="wave-separator-top">
+            <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path fill="#F6C9A6" fill-opacity="0.3"
+                    d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+                </path>
+            </svg>
+        </div>
+        <section id="contact" class="section info">
+            <div class="container narrow-container">
+                <div class="info-box">
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <h4 class="info-label">Open</h4>
+                            <p class="info-value">
+                                火〜土: 10:00 - 18:00<br>
+                                日曜日: 11:00 - 17:00<br>
+                                <span class="note">定休日: 月曜日・祝日</span>
+                            </p>
+                            <div class="info-sns">
+                                <a href="https://instagram.com" class="sns-icon" aria-label="Instagram"
+                                    data-preview-link="snsInstagram" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://x.com" class="sns-icon" aria-label="X (Twitter)"
+                                    data-preview-link="snsX" target="_blank">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                                <a href="https://facebook.com" class="sns-icon" aria-label="Facebook"
+                                    data-preview-link="snsFacebook" target="_blank">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <h4 class="info-label">Contact</h4>
+                            <p class="info-value contact-em">
+                                Tel: 03-1234-5678
+                            </p>
+                            <p class="info-sub">
+                                LINE: @store_name
+                            </p>
+                            <a href="#" class="btn-primary">お問合せ</a>
+                            <a href="#" class="btn-primary btn-reserve"
+                                style="display:none; background-color:#E76F51; margin-left:10px;">ご予約</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="wave-separator-bottom">
+            <svg viewBox="0 0 1440 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path fill="#F6C9A6" fill-opacity="0.3"
+                    d="M0,32L60,37.3C120,43,240,53,360,53.3C480,53,600,43,720,37.3C840,32,960,32,1080,42.7C1200,53,1320,75,1380,85.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+        </div>
+
+        <!-- アクセス -->
+        <section id="access" class="section access">
+            <div class="container narrow-container">
+                <h3 class="section-title">Access</h3>
+                <address class="access-address">
+                    〒123-4567<br>
+                    東京都目黒区〇〇町 1-2-3 メゾン〇〇 1F
+                </address>
+                <div class="map-placeholder">
+                    <span>Google Maps Placeholder</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="footer-logo">Store Name</p>
+            <p class="footer-copy">&copy; 2024 Office Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

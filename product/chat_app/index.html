@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猫店長のホームページ制作ガイド</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@400;500&family=M+PLUS+Rounded+1c:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- メイン画面 (2カラム: チャット + プレビュー) -->
+    <div id="chat-screen" class="screen split-screen active">
+
+        <!-- 左側: チャットエリア -->
+        <div class="chat-section">
+            <header class="chat-header">
+                <div class="header-cat">
+                    <img src="images/cat_chat.png" alt="icon" id="header-cat-img">
+                </div>
+                <div class="header-info">
+                    <h2>猫店長</h2>
+                    <span class="status">オンライン</span>
+                </div>
+                <button id="reset-btn" class="reset-btn">最初から</button>
+            </header>
+
+            <div id="chat-history" class="chat-history">
+                <!-- メッセージがここに追加されます -->
+                <div class="message cat">
+                    <div class="message-icon">
+                        <img src="images/cat_chat.png" alt="icon">
+                    </div>
+                    <div class="message-text">
+                        こんにちは！猫店長だにゃ。<br>
+                        これからホームページを作るための情報をいくつか聞くから、教えてほしいにゃ！<br>
+                        右側の画面で、出来上がっていく様子が見れるにゃ！
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-container">
+                    <input type="text" id="user-input" placeholder="ここに入力してね..." autocomplete="off">
+                    <textarea id="user-textarea" class="hidden" enterkeyhint="enter"
+                        placeholder="ここに入力してね... (Shift+Enterで改行)" rows="3"></textarea>
+                    <button id="send-btn">送信</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右側: プレビューエリア -->
+        <div class="preview-section">
+            <div class="device-switcher">
+                <button class="device-btn active" data-device="pc">💻 PC</button>
+                <button class="device-btn" data-device="mobile">📱 スマホ</button>
+            </div>
+
+            <div class="preview-wrapper pc-view"> <!-- pc-view / mobile-view -->
+                <!-- Mock Browser Bar -->
+                <!-- Mock Browser Bar Removed -->
+                <!-- <div class="p-browser-bar">
+                    <div class="p-dots"><span></span><span></span><span></span></div>
+                    <div class="p-url-display">https://your-shop.web-ne.com/</div>
+                </div> -->
+
+                <iframe id="preview-frame" style="width:100%; height:100%; border:none;"></iframe>
+            </div>
+
+            <button id="preview-close-btn" class="preview-close-btn">閉じる</button>
+        </div>
+
+    </div>
+
+    <!-- Edit List Modal -->
+    <div id="edit-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>修正リスト</h3>
+                <button class="modal-close-icon" onclick="closeEditListPopup()">×</button>
+            </div>
+            <div id="edit-list-items" class="modal-body">
+                <!-- Items will be injected here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-check" onclick="closeEditListPopup()">完璧だにゃ！</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
