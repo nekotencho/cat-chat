@@ -34,9 +34,6 @@ body {
     background-color: var(--color-bg);
     line-height: 1.6;
     height: 100dvh;
-    /* Mobile viewport fix */
-    overflow: hidden;
-    /* アプリっぽく画面固定 */
 }
 
 /* Screen Management */
@@ -672,9 +669,10 @@ img.p-card-img {
     }
 
     .p-service-grid {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        justify-content: flex-start;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        max-width: 100%;
+        margin: 0 auto;
     }
 }
 

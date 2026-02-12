@@ -744,4 +744,27 @@ textarea {
     padding-left: 12px;
     padding-right: 12px;
   }
+
+  /* セクションの横余白を消す */
+  .p-section,
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* グリッドを完全フル幅に */
+  .p-service-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* カードを画面いっぱいに */
+  .p-card {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    border-radius: 0 !important; /* 角丸消すなら */
+  }
 }
